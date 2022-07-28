@@ -32,8 +32,7 @@ $ nodemon
 Open your browser and type in the localhost URL
 
 ### To go into the pass-it-around express application of the homework 
-If you're already in the project directory and have nodemon installed
-Go into the pass-it-around folder
+If you're already in the project directory and have nodemon installed. Go into the pass-it-around folder.
 ```
 $ cd pass-it-around
 ```
