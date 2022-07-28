@@ -20,6 +20,7 @@ app.get('/bug',(req,res)=>{
     res.send(`<h1> 99 little bugs in the code </h1> <h2>99 little bugs<h2>  <a href= http://localhost:3000/bug/${bugs}>Take one down, patch it around.</a> <h2>${bugs} bugs in the code</h2> `)
 });
 
+//random bugs
 app.get('/bug/:number_of_bugs',(req,res)=>{
     let paramBug=parseInt(req.params.number_of_bugs)-1
     let rnd=Math.floor(Math.random()*(128-paramBug)+paramBug)
@@ -29,7 +30,7 @@ app.get('/bug/:number_of_bugs',(req,res)=>{
         res.send(`<h1>No more little bugs in the code </h1> <h2>No more little bugs.</h2>  <a href=http://localhost:3000/bug >Start Over</a>`);
     }
     else{
-        res.send(`<h1>${req.params.number_of_bugs} little bugs in the code </h1> <h2>${req.params.number_of_bugs} little bugs<h2>  <a href= http://localhost:3000/bug/${bugs}>Take one down, pass it around. </a> <h2> ${bugs} bugs in the code.<h2>  `)
+        res.send(`<h1>${req.params.number_of_bugs} little bugs in the code </h1> <h2>${req.params.number_of_bugs} little bugs<h2>  <a href= http://localhost:3000/bug/${bugs}>Take one down, patch it around. </a> <h2> ${bugs} bugs in the code.<h2>  `)
     }
 });
 
