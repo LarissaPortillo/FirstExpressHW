@@ -9,6 +9,10 @@ Go to the project directory
 ```
 $ cd repositoryname
 ```
+Make sure you have modemon installed
+```
+$ npm i -g nodemon
+```
 
 Install express package
 ```
@@ -25,6 +29,7 @@ To run the application
 ```
 $ nodemon
 ```
+Open your browser and type in the localhost URL
 
 ### To go into the pass-it-around express application of the homework 
 ```
@@ -45,3 +50,4 @@ To run the application
 ```
 $ nodemon
 ```
+Open your browser and type in the localhost URL
